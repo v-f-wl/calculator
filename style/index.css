@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: #CCCCCC;
+  box-sizing: border-box;
+  cursor: url(icon/cursor-black.svg), auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  position: relative;
+  padding: 20px;
+  width: 310px;
+  height: 640px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.switch {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 41px;
+  height: 73px;
+  background-color: #F4AB42;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.switch-sun {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 22px;
+  color: #555A60;
+}
+.switch-circle {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  z-index: 10;
+  width: 35px;
+  height: 35px;
+  background-color: #555A60;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.switch-moon {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.result-count {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  font-size: 60px;
+  font-weight: 600;
+  color: #F4AB42;
+}
+
+.coult-stroke {
+  position: absolute;
+  top: 180px;
+  right: 20px;
+  font-size: 30px;
+  color: #F4AB42;
+}
+
+.btns-form {
+  position: absolute;
+  bottom: 10px;
+  width: calc(100% - 40px);
+  height: 380px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 23px;
+  cursor: url(icon/cursor.svg), auto;
+}
+
+.btn-style {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  color: #555A60;
+  font-size: 25px;
+}
+
+.btn-two {
+  justify-self: end;
+  width: 110px;
+  grid-column: 3/5;
+}
+
+.bnt-color {
+  color: #F4AB42;
+}
+
+.btn-bg-color {
+  color: #F4AB42;
+  background-color: #E1E6E9;
+}
+
+.color {
+  background-color: #555A60;
+  cursor: url(icon/cursor-white.svg), auto;
+}
+.color .switch {
+  background-color: #181818;
+}
+.color .switch-circle {
+  transform: translateY(-31px);
+  background-color: #F4AB42;
+}
+.color .btn-style {
+  color: #fff;
+}
+.color .bnt-color {
+  color: #F4AB42;
+}
+.color .btn-bg-color {
+  color: #F4AB42;
+  background-color: #6B6A65;
+}/*# sourceMappingURL=index.css.map */
