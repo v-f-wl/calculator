@@ -35,8 +35,6 @@ function changeTheme(){
     }
 }
 
-
-
 // Очистка полей 
 buttonClear.onclick = clearAllField
 function clearAllField(){
@@ -49,8 +47,6 @@ function clearAllField(){
     return
 }
 
-
-
 // Проверка кнопок на нажатие
 buttonsField.onclick = (event) => {
     if(!event.target.classList.contains("btn-style")) return
@@ -58,16 +54,22 @@ buttonsField.onclick = (event) => {
     if(event.target.classList.contains("btn-nan")) return
     if(event.target.classList.contains("bnt-color")) return
 
-    // inputField.textContent = numder1
+
 
     let key = event.target.textContent
     if(digit.includes(key) && sign == ''){
-        number1 += key
-        inputField.textContent = number1
+        if(number1.length < 4){
+            number1 += key
+            inputField.textContent = number1
+        }
     } 
     if(digit.includes(key) && sign !== ''){
-        number2 += key
-        inputField.textContent = number2
+        if(number2.length < 4){
+            number2 += key
+            inputField.textContent = number2
+        }
+        // number2 += key
+        // inputField.textContent = number2
     }
     if(action.includes(key) && !number1 == ''){
         sign = key

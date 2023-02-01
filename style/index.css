@@ -4,7 +4,7 @@ body {
   font-family: "Rubik", sans-serif;
   background-color: #CCCCCC;
   box-sizing: border-box;
-  cursor: url(icon/cursor-black.svg), auto;
+  cursor: url(../icon/cursor-black.svg), auto;
 }
 
 .container {
@@ -64,7 +64,7 @@ body {
 
 .result-count {
   position: absolute;
-  top: 100px;
+  top: 110px;
   right: 20px;
   font-size: 60px;
   font-weight: 600;
@@ -88,7 +88,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 23px;
-  cursor: url(icon/cursor.svg), auto;
+  cursor: url(../icon/cursor.svg), auto;
 }
 
 .btn-style {
@@ -119,7 +119,7 @@ body {
 
 .color {
   background-color: #555A60;
-  cursor: url(icon/cursor-white.svg), auto;
+  cursor: url(../icon/cursor-white.svg), auto;
 }
 .color .switch {
   background-color: #181818;
